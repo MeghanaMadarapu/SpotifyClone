@@ -1,0 +1,409 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    background-color: black;
+    color:white;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height:100vh;
+    padding:0.5rem;
+}
+.sidebar{
+    background-color:black;
+    width: 340px;
+    border-radius: 1rem; /*16px*/
+    margin-right: 0.5rem;
+}
+.main-content{
+    background-color:#121212;
+    flex:1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding:0 1.5rem 0 1.5rem;
+}
+.music-player{
+    background-color:black;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    height:72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100px;
+    padding:0.5rem 0.75rem;
+}
+.nav-option{
+    line-height:2.5rem;
+    opacity: 0.7;
+    padding:0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option icon{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height:100%;
+    margin-top: 0.5rem;
+    padding:0.5rem 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-option img{
+    height:1.25rem;
+    width:1.25rem;
+}
+.icons{
+    font-size: 1rem;
+    display: flex;
+}
+.icons i{
+    opacity: 0.7;
+    margin: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding:0.75rem 1rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity:0.9;
+}
+.badge{
+    background-color:white ;
+    border:none;
+    border-radius: 100px;
+    padding:0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height:2rem;
+    width:fit-content;
+}
+.dark-badge{
+    background-color: black;
+    color:white;
+}
+.sticky-nav{
+    position: sticky;
+    top:0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky-nav-icons {
+    margin-left: 0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+    margin-right: 1.5rem;
+}
+.nav-item:hover{
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+}
+
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width:150px;
+    border-radius: 0.5rem;
+    padding:1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width:100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+.footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* color: #fff; */
+    padding: 4rem 1.5rem 0 1.5rem;
+    /* flex-wrap: wrap; */
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+    text-decoration:underline;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color:white;
+
+}
+.footer-social a:hover {
+    color:white;
+
+}
+
+.footer-social i{
+    font-size: 24px;
+    opacity: 0.7;
+}
+.footer-social i:hover{
+    opacity: 1;
+}
+.footer1{
+    /* height:300px; */
+    display: flex;
+    justify-content: center;
+}
+.line{
+    width:95%;
+    height:90%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.extra{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-content: center; */
+    padding: 0 1.5rem 0 1.5rem;
+    height:100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size:14px;
+}
+.extra div{
+    opacity: 0.7;
+    margin-left: 15px;
+}
+.extra div:hover{
+    opacity: 1;
+}
+.album{
+    width:25%;
+}
+.player{
+    width:50%;
+}
+.controls{
+    width:25%;
+}
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width:70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height:0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height:1rem;
+    width: 1rem;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.progress-bar::-webkit-slider-thumb:hover{
+    background-color: #1bd760;
+}
+
+.album{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.album-img{
+    height:3.5rem;
+    width: 3.5rem;
+    margin-right: 1rem;
+}
+.album-details {
+    display: flex;
+    flex-direction: column;
+}
+.album-title{
+    font-size: 13px;
+    margin:0;
+    padding:0;
+}
+.album-info{
+    font-size: 11px;
+    margin:4px 0 0 0;
+    padding:0;
+    opacity: 0.7;
+}
+.album-title:hover{
+    text-decoration: underline;
+}
+
+.album-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.album-icons-control{
+    height: 1rem;
+    margin-left: 2rem;
+    opacity: 0.7;
+    font-size: 1.2rem;
+}
+.album-icons-control:hover{
+    opacity: 1;
+}
+.controls {
+    display: flex;
+    align-items: center;
+    color: #ccc; /* Color of the icons */
+    padding: 10px;
+    background-color: #000; /* Background color to match the image */
+}
+
+.controls i {
+    margin-right: 20px; /* Space between icons */
+    font-size: 1rem; /* Adjust icon size */
+    opacity: 0.7;
+}
+.controls i:hover{
+    opacity: 1;
+}
+
+.vol-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.vol {
+    width: 100px; /* Adjust the width of the slider */
+    appearance: none;
+    background:#ddd; /* Background color of the slider */
+    height: 3px; /* Height of the slider */
+    border-radius: 100px; /* Round the slider bar */
+    cursor: pointer;
+    outline: none;
+}
+.vol::-webkit-slider-thumb {
+    appearance: none;
+    width: 12px; /* Width of the thumb */
+    height: 12px; /* Height of the thumb */
+    background: #fff; /* Color of the thumb */
+    border-radius: 50%; /* Round thumb */
+    cursor: pointer;
+    border: 2px solid #ccc; /* Border around the thumb */
+}
+
+.vol::-moz-range-thumb {
+    width: 12px; /* Width of the thumb */
+    height: 12px; /* Height of the thumb */
+    background: #fff; /* Color of the thumb */
+    border-radius: 50%; /* Round thumb */
+    cursor: pointer;
+    border: 2px solid #ccc; /* Border around the thumb */
+}
+
